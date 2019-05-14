@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">I CARE prototype</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_start_page">StartPage</string>
+    <string name="title_activity_blue_chat">BlueChat</string>
+    <string name="title_activity_activity_recognition">Activity Recognition</string>
+    <string name="title_activity_speech_recog">Speech Recognition</string>
+    <string name="title_activity_posture_recognition">Posture Recognition</string>
+    <string name="title_activity_main">Main Activity</string>
+
+</resources>

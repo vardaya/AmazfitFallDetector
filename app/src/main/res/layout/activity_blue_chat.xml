@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Data recieved:"
+            android:layout_below="@+id/close"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_horizontal"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="27dp" />
+
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/send"
+        android:layout_alignBottom="@+id/send"
+        android:layout_toLeftOf="@+id/send"
+        android:text="disconnect" />
+
+    <Button
+        android:id="@+id/open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entry"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/send"
+        android:text="connect" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/open"
+        android:layout_alignBottom="@+id/open"
+        android:layout_centerHorizontal="true"
+        android:text="Send" />
+
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginTop="27dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X Axis"
+        android:id="@+id/tvxt"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/label"
+        android:layout_marginLeft="30dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y Axis"
+        android:id="@+id/tvyt"
+        android:layout_alignTop="@+id/tvxt"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z Axis"
+        android:id="@+id/tvzt"
+        android:layout_alignTop="@+id/tvyt"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tvx"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tvxt"
+        android:layout_alignStart="@+id/tvxt"
+        android:layout_alignEnd="@+id/tvxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tvy"
+        android:layout_alignTop="@+id/tvx"
+        android:layout_alignStart="@+id/tvyt"
+        android:layout_alignEnd="@+id/tvyt"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tvz"
+        android:layout_alignTop="@+id/tvy"
+        android:layout_alignStart="@+id/tvzt"
+        android:layout_alignEnd="@+id/tvzt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature"
+        android:id="@+id/tvtempt"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tvx"
+        android:layout_toRightOf="@+id/tvx" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BPM"
+        android:id="@+id/tvbpmt"
+        android:layout_alignBottom="@+id/tvtempt"
+        android:layout_alignLeft="@+id/open"
+        android:layout_alignStart="@+id/open" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tvtemp"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/tvtempt"
+        android:layout_alignStart="@+id/tvtempt"
+
+        android:layout_alignEnd="@+id/tvtempt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tvbpm"
+        android:layout_alignTop="@+id/tvtemp"
+        android:layout_alignStart="@+id/tvbpmt"
+        android:layout_alignRight="@+id/tvbpmt"
+        android:layout_alignEnd="@+id/tvbpmt" />
+
+
+</RelativeLayout>

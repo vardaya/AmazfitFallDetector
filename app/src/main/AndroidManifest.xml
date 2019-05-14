@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.amazfit.falldetector" >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.example.amazfit.falldetector.Accel"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.HOMEPAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.amazfit.falldetector.HomePage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.amazfit.falldetector.SpeechRecog"
+            android:label="@string/title_activity_speech_recog" >
+        </activity>
+        <activity
+            android:name="com.example.amazfit.falldetector.PostureDetection"
+            android:label="@string/title_activity_posture_recognition" >
+        </activity>
+        <activity
+            android:name="com.example.amazfit.falldetector.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+    </application>
+
+</manifest>
